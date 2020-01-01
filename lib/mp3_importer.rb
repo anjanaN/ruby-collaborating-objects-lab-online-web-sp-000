@@ -16,6 +16,5 @@ class MP3Importer
 
   def import
     Dir["#{self.path}/*.mp3"]
-
   end
 end
