@@ -11,7 +11,7 @@ class MP3Importer
     #Dir.entries(self.path)
     #Dir.chdir(self.path)
     #Dir.glob("**", "*.mp3")
-    Dir.glob(self.path + ["/*.mp3"])
+    Dir.glob(["*.mp3"], [self.path])
   end
 
   def import
