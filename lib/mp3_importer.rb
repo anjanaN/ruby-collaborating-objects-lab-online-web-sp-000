@@ -7,9 +7,7 @@ class MP3Importer
   end
 
   def files
-    Dir.chdir("./spec/fixtures/**/*.mp3")
-    Dir.glob("*.mp3")
-    #Dir.entries(self.path)
+    Dir["#{self.path}/*.mp3"].each {|file| require file }
   end
 
   def import
