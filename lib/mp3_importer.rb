@@ -12,7 +12,7 @@ class MP3Importer
     #Dir.chdir(self.path)
     #Dir.glob("**", "*.mp3")
     Dir.glob(self.path + "/*.mp3").each do |f|
-      f
+      yield f
     end
   end
 
