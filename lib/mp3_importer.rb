@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    Dir["#{self.path}/**/*.mp3"].each {|file| require file }
+    Dir["#{self.path}/*.mp3"].each {|file| require file }
   end
 
   def import
