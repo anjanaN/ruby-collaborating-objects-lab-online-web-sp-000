@@ -15,6 +15,6 @@ class MP3Importer
   end
 
   def import
-    Dir["#{self.path}/*.mp3"]
+    Dir["#{self.path}"]
   end
 end
