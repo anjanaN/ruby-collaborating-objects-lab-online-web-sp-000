@@ -11,7 +11,9 @@ class MP3Importer
     #Dir.entries(self.path)
     #Dir.chdir(self.path)
     #Dir.glob("**", "*.mp3")
-    Dir.glob(self.path "/**/*.mp3")
+    Dir.glob(self.path "/**/*.mp3").each do |f|
+      f
+    end
   end
 
   def import
